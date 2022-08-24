@@ -40,6 +40,7 @@ DJANGO_APPS = (
 )
 
 THIRD_APPS = (
+    'rest_framework',
 )
 
 LOCAL_APPS = (
@@ -84,8 +85,15 @@ WSGI_APPLICATION = 'hotelreservationsapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hotel_reservations_test',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS':{
+            'init_command':"SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
