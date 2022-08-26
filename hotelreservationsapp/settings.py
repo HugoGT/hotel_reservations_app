@@ -88,8 +88,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'hotel_reservations_test',
         'USER': 'root',
-        'PASSWORD': 'rootpassword',
-        'HOST': 'db',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS':{
             'init_command':"SET sql_mode='STRICT_TRANS_TABLES'"
