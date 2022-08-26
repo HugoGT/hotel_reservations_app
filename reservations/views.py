@@ -1,6 +1,5 @@
 from json import loads
 
-from django.views import View
 from django.http.response import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
